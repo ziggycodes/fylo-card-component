@@ -1,35 +1,46 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fylo Card Component Master</title>
   <link rel="stylesheet" href="./public/output.css">
 </head>
-<body>
+<body class="h-full w-full bg-black">
 
-  <!--content wrapper-->
-    <div class="w-screen h-screen bg-no-repeat bg-cover bg-left-top absolute" style="background-image: url(./images/bg-desktop.png);">
+  <div class="bg-[#0C122C] w-4/5 h-full mx-32 relative"> <!--card content wrapper-->
 
-      <div>
+    <div class="absolute bottom-0"> <!--background image-->
+      <img src="./images/bg-desktop.png" alt="">
+    </div>
+
+    <div class="absolute top-64 left-48"> <!--fylo components1-->
+      <div class="h-40 w-72 bg-[#1D2C67] rounded-lg rounded-tr-[90px] p-6">
+        <img src="./images/logo.svg" alt="">
+        <div class="flex mt-6">
+          <div class="h-10 w-8 bg-[#0C122C]">
+            <img src="./images/icon-document.svg" alt="">
+          </div>
+          
+          <div>
+            <img class="" src="./images/icon-folder.svg" alt="">
+          </div>
         
+        <div>
+          <img src="./images/icon-upload.svg" alt="">
+        </div>
+        
+        </div>
       </div>
     </div>
- 
- 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Isaac Ayodele</a>.
+
+    <div class=" absolute top-72 right-48"> <!--fylo components2-->
+      <div class="h-32 w-96 bg-[#1D2C67] rounded-lg"></div>
+    </div>
+
+
+    
+    
   </div>
 </body>
 </html>
