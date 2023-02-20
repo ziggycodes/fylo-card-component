@@ -6,36 +6,49 @@
   <title>Fylo Card Component Master</title>
   <link rel="stylesheet" href="./public/output.css">
 </head>
-<body class="h-full w-full bg-black">
+<body class="h-full w-full bg-black font-rale">
 
   <div class="bg-[#0C122C] w-4/5 h-full mx-32 relative"> <!--card content wrapper-->
 
     <div class="absolute bottom-0"> <!--background image-->
-      <img src="./images/bg-desktop.png" alt="">
+      <img src="./images/bg-desktop.png" alt="bg-image">
     </div>
 
     <div class="absolute top-64 left-48"> <!--fylo components1-->
       <div class="h-40 w-72 bg-[#1D2C67] rounded-lg rounded-tr-[90px] p-6">
-        <img src="./images/logo.svg" alt="">
+        <img src="./images/logo.svg" alt="fylo logo">
         <div class="flex mt-6">
-          <div class="h-10 w-8 bg-[#0C122C]">
-            <img src="./images/icon-document.svg" alt="">
+          <div class="h-10 w-9 bg-[#0C122C] mx-1 px-2 py-3 rounded-md">
+            <img src="./images/icon-document.svg" alt="doc-img" class>
           </div>
           
-          <div>
-            <img class="" src="./images/icon-folder.svg" alt="">
+          <div class="h-10 w-9 bg-[#0C122C] mx-1 px-2 py-3 rounded-md">
+            <img class="" src="./images/icon-folder.svg" alt="fold-img">
           </div>
         
-        <div>
-          <img src="./images/icon-upload.svg" alt="">
+        <div class="h-10 w-9 bg-[#0C122C] mx-1 px-2 py-3 rounded-md">
+          <img src="./images/icon-upload.svg" alt="upload-img">
         </div>
         
         </div>
       </div>
     </div>
 
+    <div class="bg-white w-32 h-12 rounded-l-md rounded-tr-md absolute right-60 top-64 z-[2] p-2 text-sm"><span class=" font-fancy text-2xl">185</span> GB LEFT</div><!--comment thingy-->
+    <div class="w-[0px] h-[0px] border-t-[25px] border-l-[25px] border-l-transparent border-white absolute right-60 top-72 z-[2]"></div><!--comment thingy-->
+
     <div class=" absolute top-72 right-48"> <!--fylo components2-->
-      <div class="h-32 w-96 bg-[#1D2C67] rounded-lg"></div>
+      <div class="h-32 w-96 bg-[#1D2C67] rounded-lg px-5 py-8">
+        <div class=""> <!--fylo2 content-->
+          <span class="text-white text-sm">You've used <span class="font-fancy">815</span> GB of your storage</span>
+          <div class="w-80 h-3 bg-gradient-to-r from-[#FFA399] to-[#FF4D97] rounded-full my-3"></div>
+          <div class="w-80 text-sm text-white font-fancy flex justify-between">
+            <span>0 GB</span>
+            <span>1000 GB</span>
+          </div>
+        </div>
+        
+      </div>
     </div>
 
 
